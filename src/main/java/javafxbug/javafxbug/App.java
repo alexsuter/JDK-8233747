@@ -24,7 +24,7 @@ public class App extends Application {
         buttonCrash.setOnAction(event -> {
           Document document = webEngine.getDocument();
           System.out.println(document.getClass());
-          document.createAttribute("/test");
+          document.createAttribute("/test"); // THIS LEADS TO THE CRASH
         });
  
         VBox root = new VBox();
